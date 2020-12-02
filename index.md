@@ -1,4 +1,4 @@
-### Gallery Here & Artist's Name/Work <!-- Loads <model-viewer> for old browsers like IE11: -->
+### Brand Product Name Here <!-- Loads <model-viewer> for old browsers like IE11: -->
   <script nomodule="" src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
   </script>
 
@@ -18,20 +18,11 @@
   <!-- OPTIONAL: Include prismatic.js for Magic Leap support -->
   <!--<script src="https://unpkg.com/@magicleap/prismatic/prismatic.min.js"></script>-->
 
-<model-viewer loading="eager" id="paused-change-demo" camera-controls autoplay animation-name="Tail_whip" ar shadow-intensity="1" src="Models/scene.gltf" ar="" ar-modes="scene-viewer webxr quick-look" ios-src="Positivasaurus.usdz" alt="Art Demo" auto-rotate="" auto-rotate-delay="0" ar-scale="auto" style="width: 95%; height: 500px" exposure="0.5">  <button slot="ar-button" style="background-color: white; border-radius: 8px; border: 1 px solid black; position: absolute; top: 20px; right: 20px; ">
+<model-viewer loading="eager" id="paused-change-demo" camera-controls autoplay animation-name="CINEMA_4D_Main" ar shadow-intensity="1" src="Models/scene.gltf" ar="" ar-modes="scene-viewer webxr quick-look" ios-src="KJK_Basic_Bottle3.usdz" alt="Consumables Marketing" auto-rotate="" auto-rotate-delay="0" ar-scale="auto" style="width: 95%; height: 500px" exposure="0.5">  <button slot="ar-button" style="background-color: white; border-radius: 8px; border: 1 px solid black; position: absolute; top: 20px; right: 20px; ">
       👋 AR Click Here
   </button>
 </model-viewer>
-<script>
-(() => {
-  const modelViewer = document.querySelector('#paused-change-demo');
 
-  self.setInterval(() => {
-    modelViewer.animationName = modelViewer.animationName === 'Tail_whip' ?
-      'Idle' : 'Roar': 'Tail_whip';
-  }, 100.0);
-})();
-</script>
 <!-- Loads <model-viewer> for modern browsers: -->
  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
   </script>
